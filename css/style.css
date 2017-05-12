@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Kaushan+Script|Sacramento|Satisfy|Tangerine:400,700&subset=latin-ext,vietnamese');
+* {margin: 0;padding-top: 0;-moz-box-sizing: border-box;box-sizing: border-box;}
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Sacramento', cursive;*/
+@font-face {
+  font-family: 'segoe ui';
+  src: url('../font/SEGOEUIL.ttf');
+}
+@font-face {
+  font-family: 'segoe ui regular';
+  src: url('../font/segoe-ui-regular.ttf');
+}
+@font-face {
+  font-family: 'segoe ui semibold';
+  src: url('../font/seguisb.ttf');
+}
+@font-face {
+  font-family: 'segoe ui bold';
+  src: url('../font/segoe-ui-bold.ttf');
+}
+@font-face{font-family: 'Dancing Script', cursive}
+
+html {font-size: 16px;}
+body {font-family: 'segoe ui',Sans-serif; font-weight: lighter;color: #fff;background-color:#555; }
+/*.container-fluid,.container {padding-right: 0;padding-left: 0;}*/
+.navbar-fixed-top { margin: auto;}
+@media (max-width: 492px)
+{
+  .container {width: 410px;}
+}
+@media (min-width:480px) and (max-width: 767px){
+  .container
+   {width: 95%;}
+}
+@media (min-width:768px)  and (max-width: 991px) {
+  /*.container,*/
+  /*.navbar-fixed-top {width: 750px;}*/
+}
+@media (min-width: 992px)  and (max-width: 1199px) {
+	/*.navbar-fixed-top {width: 970px;}*/
+}
+@media (min-width:1200px){
+
+
+}
+
+/*.container-fluid{padding-left: 0;padding-right: 0;}*/
+
+/************************************ Ajustement sur le bar de navigation ************************************/
+/*menu: la hauteur et la position par rapport au haut*/
+/*#menu {background-color:#555;}*/
+
+#menu nav {height:auto; padding-top: .5rem;background-color:#555;}
+
+/*menu: la couleur du bar de navigation*/
+.navbar-default {background-color:transparent; border-color: transparent; } 
+
+/*menu: la couleur du fond du drop-down */
+#menu ul li a{    height: auto;
+    width: auto; } 
+#menu ul li {margin: .5rem;}
+
+
+/* menu: border du dropdown */
+.navbar-default .navbar-collapse { border-color: #fff; /*background-color:#555;*/}
+
+/* menu: La couleur du texte de navigation */
+.navbar-default .navbar-nav>li>a { display: inline-block;}
+.navbar-default .navbar-nav>li>a:link,
+.navbar-default .navbar-nav>li>a:visited
+ { color: #fff; font-family: 'segoe ui regular',Sans-serif;}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+ { color: #fff; }
+
+/*menu: l'option active*/
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover 
+{background-color:rgb(255,128,128); border: 1px solid #fff; border-radius: .2rem; transition:background .3s ease-in-out;}
+
+/*logo: le texte du logo à gauche*/
+.navbar-brand{padding-top: .5rem;padding-bottom:.5rem;}
+.navbar-default .navbar-brand:link,
+.navbar-default .navbar-brand:visited,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active
+ {color:#ff0080;font-family: 'Dancing Script', cursive; text-shadow: 2px 2px 6px rgb(200,0,100),-2px 0px 6px rgb(200,0,100),0px -2px 6px rgb(200,0,100);font-weight: bold; font-size: 1.5rem;} 
+
+header .fa  {color:rgba(255,0,192,1); font-size: 2rem  !important;}
+
+/* bouton: changer la couleur du fond */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: transparent;}
+
+/* bouton: le radius*/
+/*.navbar-toggle {border-radius: 0;} */
+
+/* bouton: la courleur des trois lignes au dessus*/
+.navbar-default .navbar-toggle .icon-bar  {background-color:#fff;} 
+
+
+/************************************ Ajustement sur la section Quote ************************************/
+#quote {background-color: #fff; margin-top: 4.5rem; font-family: 'segoe ui semibold',Sans-serif;}
+#quote i {font-size: .8rem; color: rgb(255,128,128); }
+#quote .btn-info {background-color: transparent;border: none;}
+#quote blockquote{
+    border-left:none
+    background-color:#fff;
+}
+#quote .quote-badge{
+    background-color:#222;
+    color: rgb(255,128,128);   
+}
+#quote .quote-box{
+    overflow: hidden;
+    margin-top: -50px;
+    padding-top: -100px;
+    border-radius: 17px;
+    background-color: rgb(164,70,164);
+    margin-top: 25px;
+    color:white;  
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+}
+#quote .quotation-mark{    
+    margin-top: -10px;
+    font-weight: bold;
+    font-size:100px;
+    color:white;
+    font-family: "Times New Roman", Georgia, Serif;   
+}
+
+#quote .quote-text{    
+    font-size: 1.2rem;
+    margin-top: -65px;
+}
+
+
+/************************************ Ajustement sur la section About ************************************/
+hr {width:45px;  border-width: 2px; text-align: left;}
+#about {background-color: #fff;}
+#about .container {min-height:450px; height:auto;padding-left: 1.5rem; padding-bottom: 2rem;}
+#about .container {color:#000;}
+
+@media (max-width:767px) {
+	#about .container {display: flex; flex-direction: column-reverse; align-items: center; padding-bottom: 2rem;}
+	#about .container div:first-child,
+	#about .container div:last-child{width: 100%; padding-top: 2rem; text-align: center;}
+	#about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}
+	#about img {max-width:50%; max-height:50%;  width:auto; height:auto;border-radius: 50%; border:10px solid rgb(255,128,128);margin-top: .5rem; }
+	#portfolio .thumbnail{display: inline-block;}
+}
+@media (min-width:768px) {
+	#about .container {display: flex; flex-direction: row; align-items: center;}
+	#about .container div:first-child{width: 60%;}
+	#about .container div:last-child{width: 40%; text-align: center; }
+	#about .container div h3{line-height: 2rem; margin-top: .5rem; padding-top: 1rem;padding-bottom: 1rem;}
+	#about img {max-width:50%; max-height:50%; width:auto; height:auto;border-radius: 50%;border:10px solid rgb(255,128,128); margin-top: .5rem; }
+	#portfolio .thumbnail{display: block;}
+}
+hr {width:100%;}
+#about .container div {padding: 10px;}
+/*#about img {max-width:50%; max-height:50%; border-radius: 50%; box-shadow: 15px 5px 5px #888888;margin-top: .5rem; }*/
+
+
+/************************************ Ajustement sur la section Portfolio ************************************/
+#portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 5rem; padding-bottom:5rem; color:#fff;}
+@media (max-width:767px) {
+	#portfolio .thumbnail{display: inline-block;}
+}
+@media (min-width:768px) {
+	#portfolio .thumbnail{display: block;}
+}
+
+#portfolio hr{border-color:#fff;}
+#portfolio .row:first-child {margin-bottom: 30px;}
+.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s ease-in-out; padding:.4rem; border-radius:.5rem;}
+.thumbnail a:link,
+.thumbnail a:visited
+ {color:#fff;}
+.thumbnail a:hover,
+.thumbnail a:active
+ {color:#222;}
+#portfolio .panel {background-color: #fff; border:none; box-shadow:-5px 5px 5px #444,5px 5px 5px #444;} /*rgba(220,240,180,1); rgb(255,128,192);*/
+.panel-default>.panel-heading {
+    color: #000;
+    background-color: rgb(50,50,50);
+    border-color: #ddd;
+}
+.nav-tabs>li.active>a:link,
+.nav-tabs>li.active>a:visited,
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:active
+{background-color: #555; color:#fff; border:none;}
+.nav-tabs>li>a:link,
+.nav-tabs>li>a:visited {background-color: transparent; color:#fff; border:none;}
+.nav-tabs>li>a:hover, 
+.nav-tabs>li>a:active
+{background-color: transparent; }
+.nav-tabs {border-bottom: 1px solid #555;}
+.glyphicon-apple {color: rgb(32,223,214);}
+.glyphicon-tree-deciduous {color:yellow;}
+.glyphicon-leaf {color: #00ff00;}
+.glyphicon-wrench {color:rgb(250,0,0);}
+
+/************************************ Ajustement sur la section Contact ************************************/
+#contact {background-color: #fff; }
+#contact .container{color:#000;display: flex;min-height: 10rem; }
+@media (max-width:767px) {
+	#contact .container{
+		padding:1.5rem;  
+		flex-direction: column-reverse; 		
+	}	
+	#contact form {width: 100%; padding: 2rem;}
+	#contact form ~ div {width:100%;padding: 2rem; }
+	#contact .container:last-child div,
+	#contact .container:last-child h3{ width:100%; line-height: 2.5rem;}	
+}
+
+@media (min-width:768px) {
+	#contact .container{
+		padding:1.5rem; 
+		flex-direction: row; 
+	}	
+	#contact form {width: 50%; padding: 2rem;}
+	#contact form ~ div {width:50%;padding: 2rem; }
+	#contact .container:last-child div,
+	#contact .container:last-child h3{ width:50%; line-height: 2.5rem;}
+}
+
+
+.glyphicon-earphone {color:rgb(255,100,0);text-shadow: 2px 2px 5px #222;}
+
+#contact h2 {color: rgb(255,100,0); margin-top: 0;}
+#contact hr {border-color: rgb(255,100,0); box-shadow: 2px 2px 5px #222;}
+
+#contact h3 {color:#000; padding-top: 1rem;}
+.form-control { background-color: rgba(255,100,0,.1); }
+#contact form button {background-color: rgba(255,100,0,.5); border: transparent;font-weight: bold;}
+#contact form button:hover {border-color: rgba(255,100,0,1);background-color: rgba(255,100,0,.6);}
+
+.form-control:focus {transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  box-shadow: -2px 2px 4px rgba(255,100,0,.3),2px 2px 4px rgba(255,100,0,.3),0px -2px 4px rgba(255,100,0,.3);border-color: rgba(255,100,0,1);}
+
+#contact .container:last-child h3,
+#contact .container:last-child div 
+{padding:0 2rem 1rem;}
+
+
+
+#contact ul {padding: 0;}
+#contact ul li {display: inline-block; text-align: left; text-decoration: none;margin:.5rem;}
+#contact .fa {
+    font-size: 2rem;
+    color: rgb(170,4,100);
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+#contact ul li a:link, 
+#contact ul li a:visited {
+    display: inline-block;
+    border: 1px solid rgb(170,4,100);
+    width: 3.2rem;
+    height: 3.2rem;
+    text-decoration: none;
+    line-height: 3.2rem;
+    transition: color .5s ease-in-out;
+}
+#contact .container:last-child h4 {height:2rem;}
+#contact ul li a:hover, 
+#contact ul li a:active {color:#444; border:1px solid #444;}
+
+
+/************************************ Ajustement sur la section footer ************************************/
+footer div {font-family: 'segoe ui bold',Sans-serif; height:3rem; line-height:3rem; vertical-align: middle;background-color:#555;}
