@@ -1,31 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Kaushan+Script|Sacramento|Satisfy|Tangerine:400,700&subset=latin-ext,vietnamese');
-* {margin: 0;padding-top: 0;-moz-box-sizing: border-box;box-sizing: border-box;}
-/*font-family: 'Dancing Script', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Tangerine', cursive;
-font-family: 'Sacramento', cursive;*/
-@font-face {
-  font-family: 'segoe ui';
-  src: url('../font/SEGOEUIL.ttf');
-}
-@font-face {
-  font-family: 'segoe ui regular';
-  src: url('../font/segoe-ui-regular.ttf');
-}
-@font-face {
-  font-family: 'segoe ui semibold';
-  src: url('../font/seguisb.ttf');
-}
-@font-face {
-  font-family: 'segoe ui bold';
-  src: url('../font/segoe-ui-bold.ttf');
-}
-@font-face{font-family: 'Dancing Script', cursive}
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
 
 html {font-size: 16px;}
-body {font-family: 'segoe ui',Sans-serif; font-weight: lighter;color: #fff;background-color:#555; }
+body {font-family: 'Lato', sans-serif; font-weight: 400;color: #fff;}
 /*.container-fluid,.container {padding-right: 0;padding-left: 0;}*/
 .navbar-fixed-top { margin: auto;}
 @media (max-width: 492px)
@@ -36,43 +13,30 @@ body {font-family: 'segoe ui',Sans-serif; font-weight: lighter;color: #fff;backg
   .container
    {width: 95%;}
 }
-@media (min-width:768px)  and (max-width: 991px) {
-  /*.container,*/
-  /*.navbar-fixed-top {width: 750px;}*/
-}
-@media (min-width: 992px)  and (max-width: 1199px) {
-	/*.navbar-fixed-top {width: 970px;}*/
-}
-@media (min-width:1200px){
 
 
-}
 
-/*.container-fluid{padding-left: 0;padding-right: 0;}*/
 
 /************************************ Ajustement sur le bar de navigation ************************************/
-/*menu: la hauteur et la position par rapport au haut*/
-/*#menu {background-color:#555;}*/
 
-#menu nav {height:auto; padding-top: .5rem;background-color:#555;}
+#menu nav {height:auto; padding-top: 10px; padding-bottom:10px;background-color:#555;}
 
 /*menu: la couleur du bar de navigation*/
 .navbar-default {background-color:transparent; border-color: transparent; } 
 
 /*menu: la couleur du fond du drop-down */
-#menu ul li a{    height: auto;
-    width: auto; } 
-#menu ul li {margin: .5rem;}
+#menu ul li a{ height: auto; width: auto; padding-top:8px; padding-bottom: 8px;} 
+#menu ul li {margin: .5rem; }
 
 
 /* menu: border du dropdown */
-.navbar-default .navbar-collapse { border-color: #fff; /*background-color:#555;*/}
+.navbar-default .navbar-collapse { border-color: #fff; }
 
 /* menu: La couleur du texte de navigation */
-.navbar-default .navbar-nav>li>a { display: inline-block;}
+.navbar-default .navbar-nav>li>a { display: inline-block; font-weight: 700;}
 .navbar-default .navbar-nav>li>a:link,
 .navbar-default .navbar-nav>li>a:visited
- { color: #fff; font-family: 'segoe ui regular',Sans-serif;}
+ { color: #fff; }
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:active,
  { color: #fff; }
@@ -81,7 +45,7 @@ body {font-family: 'segoe ui',Sans-serif; font-weight: lighter;color: #fff;backg
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, 
 .navbar-default .navbar-nav>.active>a:hover 
-{background-color:rgb(255,128,128); border: 1px solid #fff; border-radius: .2rem; transition:background .3s ease-in-out;}
+{background-color: rgb(170,4,100); border: 1px solid #fff; color:#fff; transition:background .3s ease-in-out;}
 
 /*logo: le texte du logo à gauche*/
 .navbar-brand{padding-top: .5rem;padding-bottom:.5rem;}
@@ -89,9 +53,12 @@ body {font-family: 'segoe ui',Sans-serif; font-weight: lighter;color: #fff;backg
 .navbar-default .navbar-brand:visited,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:active
- {color:#ff0080;font-family: 'Dancing Script', cursive; text-shadow: 2px 2px 6px rgb(200,0,100),-2px 0px 6px rgb(200,0,100),0px -2px 6px rgb(200,0,100);font-weight: bold; font-size: 1.5rem;} 
+ {color:#ff0080;font-weight: 900; text-shadow: 2px 2px 6px rgb(200,0,100),-2px 0px 6px rgb(200,0,100),0px -2px 6px rgb(200,0,100);font-weight: bold; font-size: 1.5rem;} 
 
-header .fa  {color:rgba(255,0,192,1); font-size: 2rem  !important;}
+
+.inject-me { width: 50px; height: auto; fill:#ff0080; }
+.navbar-header a {display: flex; flex-direction: row; align-items: center; padding-right: 8px;}
+.navbar-header h3 {width: 300px; font-weight: 700; margin-bottom: 10px; margin-top: 18px;}
 
 /* bouton: changer la couleur du fond */
 .navbar-default .navbar-toggle:hover,
@@ -105,12 +72,12 @@ header .fa  {color:rgba(255,0,192,1); font-size: 2rem  !important;}
 
 
 /************************************ Ajustement sur la section Quote ************************************/
-#quote {background-color: #fff; margin-top: 4.5rem; font-family: 'segoe ui semibold',Sans-serif;}
+#quote {background-color: #fff; margin-top: 4.5rem; }
 #quote i {font-size: .8rem; color: rgb(255,128,128); }
 #quote .btn-info {background-color: transparent;border: none;}
 #quote blockquote{
     border-left:none
-    background-color:#fff;
+    background-color:#fff;font-weight: 700;
 }
 #quote .quote-badge{
     background-color:#222;
@@ -126,6 +93,7 @@ header .fa  {color:rgba(255,0,192,1); font-size: 2rem  !important;}
     color:white;  
     box-shadow: 2px 2px 2px 2px #E0E0E0;
 }
+#quote hr {background-color: #fff; border: 0 none; color: #fff; height: 1px;}
 #quote .quotation-mark{    
     margin-top: -10px;
     font-weight: bold;
@@ -138,33 +106,36 @@ header .fa  {color:rgba(255,0,192,1); font-size: 2rem  !important;}
     font-size: 1.2rem;
     margin-top: -65px;
 }
-
+#quote .author {font-size: 16px; }
+#quote .inject-me_author {width: 30px; height: auto; fill:rgba(200,200,200,1);}
+#quote .blog-post-actions p {display: flex; flex-direction: row; align-items: center;}
 
 /************************************ Ajustement sur la section About ************************************/
 hr {width:45px;  border-width: 2px; text-align: left;}
 #about {background-color: #fff;}
 #about .container {min-height:450px; height:auto;padding-left: 1.5rem; padding-bottom: 2rem;}
 #about .container {color:#000;}
-
-@media (max-width:767px) {
+#about .container div h3 {font-weight: 300;}
+#about .container img {float:right;max-width:30%; max-height:30%;  width:auto; height:auto;border-radius: 50%; border:10px solid #555;margin-top: .5rem; }
+@media (max-width: 448px)
+{ 
+    body {width:448px;} 
+    #about .container {display: flex; flex-direction: column-reverse; align-items: center; padding-bottom: 2rem;}
+}
+@media (min-width: 449px) and (max-width:767px) {
 	#about .container {display: flex; flex-direction: column-reverse; align-items: center; padding-bottom: 2rem;}
-	#about .container div:first-child,
-	#about .container div:last-child{width: 100%; padding-top: 2rem; text-align: center;}
-	#about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}
-	#about img {max-width:50%; max-height:50%;  width:auto; height:auto;border-radius: 50%; border:10px solid rgb(255,128,128);margin-top: .5rem; }
+	#about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}	
 	#portfolio .thumbnail{display: inline-block;}
 }
 @media (min-width:768px) {
 	#about .container {display: flex; flex-direction: row; align-items: center;}
 	#about .container div:first-child{width: 60%;}
-	#about .container div:last-child{width: 40%; text-align: center; }
+	#about .container img{width: 40%; text-align: center; }
 	#about .container div h3{line-height: 2rem; margin-top: .5rem; padding-top: 1rem;padding-bottom: 1rem;}
-	#about img {max-width:50%; max-height:50%; width:auto; height:auto;border-radius: 50%;border:10px solid rgb(255,128,128); margin-top: .5rem; }
 	#portfolio .thumbnail{display: block;}
 }
 hr {width:100%;}
 #about .container div {padding: 10px;}
-/*#about img {max-width:50%; max-height:50%; border-radius: 50%; box-shadow: 15px 5px 5px #888888;margin-top: .5rem; }*/
 
 
 /************************************ Ajustement sur la section Portfolio ************************************/
@@ -233,25 +204,25 @@ hr {width:100%;}
 }
 
 
-.glyphicon-earphone {color:rgb(255,100,0);text-shadow: 2px 2px 5px #222;}
+.glyphicon-earphone {color:rgb(164,70,164);text-shadow: 2px 2px 5px #222;}
 
-#contact h2 {color: rgb(255,100,0); margin-top: 0;}
-#contact hr {border-color: rgb(255,100,0); box-shadow: 2px 2px 5px #222;}
+#contact h2 {color: rgb(164,70,164); margin-top: 0;}
+#contact hr {background-color: #ccc; border: 0 none; color: #ccc; height: 1px;}
 
 #contact h3 {color:#000; padding-top: 1rem;}
-.form-control { background-color: rgba(255,100,0,.1); }
-#contact form button {background-color: rgba(255,100,0,.5); border: transparent;font-weight: bold;}
-#contact form button:hover {border-color: rgba(255,100,0,1);background-color: rgba(255,100,0,.6);}
+.form-control { background-color: rgba(164,70,164,0.1); }
+#contact form button {background-color:rgba(164,70,164,1); border: solid 2px rgba(164,70,164,1);font-weight: bold; color: #fff; transition: all .5s ease-in-out;}
+#contact form button:hover {background-color: #fff; color:rgb(170,4,100);; }
 
 .form-control:focus {transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  box-shadow: -2px 2px 4px rgba(255,100,0,.3),2px 2px 4px rgba(255,100,0,.3),0px -2px 4px rgba(255,100,0,.3);border-color: rgba(255,100,0,1);}
+  box-shadow: -2px 2px 4px rgba(100,100,100,.5),2px 2px 4px rgba(100,100,100,.5),0px -2px 4px rgba(100,100,100,1);border-color: rgba(164,70,164,.5);}
 
 #contact .container:last-child h3,
 #contact .container:last-child div 
 {padding:0 2rem 1rem;}
 
 
-
+#contact h3 {font-weight: 300;}
 #contact ul {padding: 0;}
 #contact ul li {display: inline-block; text-align: left; text-decoration: none;margin:.5rem;}
 #contact .fa {
@@ -274,8 +245,9 @@ hr {width:100%;}
 }
 #contact .container:last-child h4 {height:2rem;}
 #contact ul li a:hover, 
-#contact ul li a:active {color:#444; border:1px solid #444;}
+#contact ul li a:active {background-color:rgb(170,4,100);color:#fff; transition: all .5s ease-in-out;}
 
 
 /************************************ Ajustement sur la section footer ************************************/
-footer div {font-family: 'segoe ui bold',Sans-serif; height:3rem; line-height:3rem; vertical-align: middle;background-color:#555;}
+footer {background-color:#555;}
+footer div { height:3rem; line-height:3rem; vertical-align: middle;}
