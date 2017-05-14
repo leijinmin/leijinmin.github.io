@@ -121,14 +121,14 @@ hr {width:45px;  border-width: 2px; text-align: left;}
 }
 @media (min-width: 449px) and (max-width:767px) {
 	#about .container {display: flex; flex-direction: column-reverse; align-items: center; padding-bottom: 2rem;}
-	#about .container img{width: 70%;  }
+	#about .container img{width: 50%;  }
     #about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}	
 	#portfolio .thumbnail{display: inline-block;}
 }
 @media (min-width:768px) {
 	#about .container {display: flex; flex-direction: row; align-items: center;}
-	#about .container div:first-child{min-width:70%;}
-	#about .container img{max-width:30%; }
+	#about .container div:first-child{min-width:75%;}
+	#about .container img{max-width:25%; }
 	#about .container div h3{line-height: 2rem; margin-top: .5rem; padding-top: 1rem;padding-bottom: 1rem;}
 	#portfolio .thumbnail{display: block;}
 }
