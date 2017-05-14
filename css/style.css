@@ -113,30 +113,33 @@ hr {width:45px;  border-width: 2px; text-align: left;}
 #about .container {min-height:450px; height:auto;padding-left: 1.5rem; padding-bottom: 2rem;}
 #about .container {color:#000;}
 #about .container div h3 {font-weight: 300;}
-#about .container img {float:right;max-width:30%; max-height:30%;  width:auto; height:auto;border-radius: 50%; border:10px solid #555;margin-top: .5rem; }
+#about .container img {float:right; width:auto; height:auto;border-radius: 50%; border:10px solid #555;margin-top: .5rem;text-align: center; padding: .1rem; }
 @media (max-width: 448px)
 { 
-   /* body {width:448px;} */
     #about .container {display: flex; flex-direction: column-reverse; align-items: center; padding-bottom: 2rem;}
+    #about .container img{width: 50%;  }
 }
 @media (min-width: 449px) and (max-width:767px) {
 	#about .container {display: flex; flex-direction: column-reverse; align-items: center; padding-bottom: 2rem;}
-	#about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}	
+	#about .container img{width: 40%;  }
+    #about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}	
 	#portfolio .thumbnail{display: inline-block;}
 }
 @media (min-width:768px) {
 	#about .container {display: flex; flex-direction: row; align-items: center;}
-	#about .container div:first-child{width: 60%;}
-	#about .container img{width: 40%; text-align: center; }
+	#about .container div:first-child{min-width:70%;}
+	#about .container img{max-width:30%; }
 	#about .container div h3{line-height: 2rem; margin-top: .5rem; padding-top: 1rem;padding-bottom: 1rem;}
 	#portfolio .thumbnail{display: block;}
 }
 hr {width:100%;}
 #about .container div {padding: 10px;}
 
-
 /************************************ Ajustement sur la section Portfolio ************************************/
 #portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 5rem; padding-bottom:5rem; color:#fff;}
+a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s ease-in-out; padding:.4rem;margin-bottom: 0; border-radius:.5rem;}
+.tab-content h4 a, .tab-content p a{color:#555;}
+.tab-content p {margin-bottom: 2rem;}
 @media (max-width:767px) {
 	#portfolio .thumbnail{display: inline-block;}
 }
@@ -146,14 +149,7 @@ hr {width:100%;}
 
 #portfolio hr{border-color:#fff;}
 #portfolio .row:first-child {margin-bottom: 30px;}
-.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s ease-in-out; padding:.4rem; border-radius:.5rem;}
-.thumbnail a:link,
-.thumbnail a:visited
- {color:#fff;}
-.thumbnail a:hover,
-.thumbnail a:active
- {color:#222;}
-#portfolio .panel {background-color: #fff; border:none; box-shadow:-5px 5px 5px #444,5px 5px 5px #444;} /*rgba(220,240,180,1); rgb(255,128,192);*/
+#portfolio .panel {background-color: #fff; border:none; box-shadow:-5px 5px 5px #444,5px 5px 5px #444;}
 .panel-default>.panel-heading {
     color: #000;
     background-color: rgb(50,50,50);
@@ -213,6 +209,8 @@ hr {width:100%;}
 
 .form-control:focus {transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   box-shadow: -2px 2px 4px rgba(100,100,100,.5),2px 2px 4px rgba(100,100,100,.5),0px -2px 4px rgba(100,100,100,1);border-color: rgba(164,70,164,.5);}
+
+#error {color: red; padding-bottom: 1rem; font-weight: 700;}
 
 #contact .container:last-child h3,
 #contact .container:last-child div 
