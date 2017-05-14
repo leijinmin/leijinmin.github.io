@@ -10,8 +10,7 @@ body {font-family: 'Lato', sans-serif; font-weight: 400;color: #fff;}
   .container
    {width: 95%;}
 }
-
-
+h4 {line-height: 2rem;}
 
 
 /************************************ Ajustement sur le bar de navigation ************************************/
@@ -202,7 +201,7 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s eas
 #contact h2 {color: rgb(164,70,164); margin-top: 0;}
 #contact hr {background-color: #ccc; border: 0 none; color: #ccc; height: 1px;}
 
-#contact h3 {color:#000; padding-top: 1rem;}
+#contact h4 {color:#000; }
 .form-control { background-color: rgba(164,70,164,0.1); }
 #contact form button {background-color:rgba(164,70,164,1); border: solid 2px rgba(164,70,164,1);font-weight: bold; color: #fff; transition: all .5s ease-in-out;}
 #contact form button:hover {background-color: #fff; color:rgb(170,4,100);; }
