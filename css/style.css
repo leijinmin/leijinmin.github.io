@@ -135,7 +135,7 @@ hr {width:100%;}
 #about .container div {padding: 10px;}
 
 /************************************ Ajustement sur la section Portfolio ************************************/
-#portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 5rem; padding-bottom:5rem; color:#fff;}
+#portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 3.5rem; padding-bottom:4rem; color:#fff;}
 a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s ease-in-out; padding:.4rem;margin-bottom: 0; border-radius:.5rem;}
 .tab-content h4 a, .tab-content p a{color:#555;}
 .tab-content p {margin-bottom: 2rem;}
@@ -147,7 +147,7 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s eas
 }
 
 #portfolio hr{border-color:#fff;}
-#portfolio .row:first-child {margin-bottom: 30px;}
+#portfolio .row:first-child {margin-bottom: 3rem;}
 #portfolio .panel {background-color: #fff; border:none; box-shadow:-5px 5px 5px #444,5px 5px 5px #444;}
 .panel-default>.panel-heading {
     color: #000;
