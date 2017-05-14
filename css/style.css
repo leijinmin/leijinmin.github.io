@@ -252,4 +252,4 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s eas
 
 /************************************ Ajustement sur la section footer ************************************/
 footer {background-color:#555;}
-footer div { height:3rem; line-height:3rem; vertical-align: middle;}
+footer div { min-height:3rem; line-height:1.5rem; vertical-align: middle; padding-top: 1.2rem; padding-bottom: 1.2rem;}
