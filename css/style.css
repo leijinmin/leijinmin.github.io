@@ -216,7 +216,7 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s eas
 #contact .container:last-child div 
 {padding:0 2rem 1rem;}
 
-
+#contact h4 {margin-bottom: 1rem;}
 #contact h3 {font-weight: 300;}
 #contact ul {padding: 0;}
 #contact ul li {display: inline-block; text-align: left; text-decoration: none;margin:.5rem;}
@@ -238,10 +238,9 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s eas
     line-height: 3.2rem;
     transition: color .5s ease-in-out;
 }
-#contact .container:last-child h4 {height:2rem;}
+
 #contact ul li a:hover, 
 #contact ul li a:active {background-color:rgb(170,4,100);color:#fff; transition: all .5s ease-in-out;}
-
 
 /************************************ Ajustement sur la section footer ************************************/
 footer {background-color:#555;}
