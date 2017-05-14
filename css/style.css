@@ -5,7 +5,7 @@ html {font-size: 16px;}
 body {font-family: 'Lato', sans-serif; font-weight: 400;color: #fff;}
 /*.container-fluid,.container {padding-right: 0;padding-left: 0;}*/
 .navbar-fixed-top { margin: auto;}
-
+/*.container {padding-right: 0;padding-left: 0;}*/
 @media (min-width:480px) and (max-width: 767px){
   .container
    {width: 95%;}
@@ -175,11 +175,10 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s eas
 #contact .container{color:#000;display: flex;min-height: 10rem; }
 @media (max-width:767px) {
 	#contact .container{
-		padding:1.5rem;  
 		flex-direction: column-reverse; 		
 	}	
-	#contact form {width: 100%; padding: 2rem;}
-	#contact form ~ div {width:100%;padding: 2rem; }
+	#contact form {width: 100%; padding-top: 2rem; padding-bottom: 2rem;}
+	#contact form ~ div {width:100%;padding-top: 2rem; padding-bottom: 2rem;}
 	#contact .container:last-child div,
 	#contact .container:last-child h3{ width:100%; line-height: 2.5rem;}	
 }
