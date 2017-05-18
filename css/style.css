@@ -41,7 +41,7 @@ h4 {line-height: 2rem;}
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, 
 .navbar-default .navbar-nav>.active>a:hover 
-{background-color: rgb(170,4,100); border: 1px solid #fff; color:#fff; transition:background .3s ease-in-out;}
+{background-color: rgb(170,4,100); border: 1px solid #fff; color:#fff; -webkit-transition:background .3s ease-in-out; transition:background .3s ease-in-out;}
 
 /*logo: le texte du logo à gauche*/
 .navbar-brand{padding-top: .5rem;padding-bottom:.5rem;}
@@ -53,7 +53,7 @@ h4 {line-height: 2rem;}
 
 
 .inject-me { width: 50px; height: auto; fill:#ff0080; }
-.navbar-header a {display: flex; flex-direction: row; align-items: center; padding-right: 8px;}
+.navbar-header a {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-right: 8px;}
 .navbar-header h3 {width: 300px; font-weight: 700; margin-bottom: 10px; margin-top: 18px;}
 
 /* bouton: changer la couleur du fond */
@@ -68,16 +68,18 @@ h4 {line-height: 2rem;}
 
 
 /************************************ Ajustement sur la section Quote ************************************/
-#quote {background-color: #fff; margin-top: 4.5rem; }
+#quote {/*background-color: #fff;*/ margin-top: 4.5rem; 
+}
 #quote i {font-size: .8rem; color: rgb(255,128,128); }
 #quote .btn-info {background-color: transparent;border: none;}
 #quote blockquote{
-    border-left:none
+    border-left:none;
     background-color:#fff;font-weight: 700;
 }
 #quote .quote-badge{
     background-color:#222;
     color: rgb(255,128,128);   
+
 }
 #quote .quote-box{
     overflow: hidden;
@@ -87,7 +89,8 @@ h4 {line-height: 2rem;}
     background-color: rgb(164,70,164);
     margin-top: 25px;
     color:white;  
-    box-shadow: 2px 2px 2px 2px #E0E0E0;
+    -webkit-box-shadow: 2px 2px 2px 2px #E0E0E0;  
+            box-shadow: 2px 2px 2px 2px #E0E0E0;
 }
 #quote hr {background-color: #fff; border: 0 none; color: #fff; height: 1px;}
 #quote .quotation-mark{    
@@ -104,51 +107,51 @@ h4 {line-height: 2rem;}
 }
 #quote .author {font-size: 16px; }
 #quote .inject-me_author {width: 30px; height: auto; fill:rgba(200,200,200,1);}
-#quote .blog-post-actions p {display: flex; flex-direction: row; align-items: center;}
+#quote .blog-post-actions p {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 
 /************************************ Ajustement sur la section About ************************************/
 hr {width:45px;  border-width: 2px; text-align: left;}
-#about {background-color: #fff;}
+/*#about {background-color: #fff;}*/
 #about .container {min-height:450px; height:auto;padding-left: 1.5rem; padding-bottom: 2rem;}
 #about .container {color:#000;}
 #about .container div h3 {font-weight: 300;}
 #about .container img {float:right; width:auto; height:auto;border-radius: 50%; border:10px solid #555;margin-top: .5rem;text-align: center; padding: .1rem; }
 @media (max-width: 448px)
 { 
-    #about .container {display: flex; flex-direction: column-reverse; align-items: center; padding-bottom: 2rem;}
+    #about .container {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 2rem;}
     #about .container img{width: 70%;  }
 }
 @media (min-width: 449px) and (max-width:767px) {
-	#about .container {display: flex; flex-direction: column-reverse; align-items: center; padding-bottom: 2rem;}
-	#about .container img{width: 50%;  }
-    #about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}	
-	#portfolio .thumbnail{display: inline-block;}
+    #about .container {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 2rem;}
+    #about .container img{width: 50%;  }
+    #about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}  
+    #portfolio .thumbnail{display: inline-block;}
 }
 @media (min-width:768px) {
-	#about .container {display: flex; flex-direction: row; align-items: center;}
-	#about .container div:first-child{min-width:75%;}
-	#about .container img{max-width:25%; }
-	#about .container div h3{line-height: 2rem; margin-top: .5rem; padding-top: 1rem;padding-bottom: 1rem;}
-	#portfolio .thumbnail{display: block;}
+    #about .container {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+    #about .container div:first-child{min-width:75%;}
+    #about .container img{max-width:25%; }
+    #about .container div h3{line-height: 2rem; margin-top: .5rem; padding-top: 1rem;padding-bottom: 1rem;}
+    #portfolio .thumbnail{display: block;}
 }
 hr {width:100%;}
 #about .container div {padding: 10px;}
 
 /************************************ Ajustement sur la section Portfolio ************************************/
 #portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 3.5rem; padding-bottom:4rem; color:#fff;}
-a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s ease-in-out; padding:.4rem;margin-bottom: 0; border-radius:.5rem;}
+a.thumbnail {border: 1px dashed #fff; border-radius: 0; -webkit-transition:border 1s ease-in-out; transition:border 1s ease-in-out; padding:.4rem;margin-bottom: 0; border-radius:.5rem;}
 .tab-content h4 a, .tab-content p a{color:#555;}
 .tab-content p {margin-bottom: 2rem;}
 @media (max-width:767px) {
-	#portfolio .thumbnail{display: inline-block;}
+    #portfolio .thumbnail{display: inline-block;}
 }
 @media (min-width:768px) {
-	#portfolio .thumbnail{display: block;}
+    #portfolio .thumbnail{display: block;}
 }
 
 #portfolio hr{border-color:#fff;}
 #portfolio .row:first-child {margin-bottom: 3rem;}
-#portfolio .panel {background-color: #fff; border:none; box-shadow:-5px 5px 5px #444,5px 5px 5px #444;}
+#portfolio .panel {background-color: #fff; border:none; -webkit-box-shadow:-5px 5px 5px #444,5px 5px 5px #444; box-shadow:-5px 5px 5px #444,5px 5px 5px #444;}
 .panel-default>.panel-heading {
     color: #000;
     background-color: rgb(50,50,50);
@@ -171,27 +174,33 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s eas
 .glyphicon-wrench {color:rgb(250,0,0);}
 
 /************************************ Ajustement sur la section Contact ************************************/
-#contact {background-color: #fff; }
-#contact .container{color:#000;display: flex;min-height: 10rem; }
+/*#contact {background-color: #fff; }*/
+#contact .container{color:#000;display: -webkit-box;display: -ms-flexbox;display: flex;min-height: 10rem; }
 @media (max-width:767px) {
-	#contact .container{
-		flex-direction: column-reverse; 		
-	}	
-	#contact form {width: 100%; padding-top: 2rem; padding-bottom: 2rem;}
-	#contact form ~ div {width:100%;padding-top: 2rem; padding-bottom: 2rem;}
-	#contact .container:last-child div,
-	#contact .container:last-child h3{ width:100%; line-height: 2.5rem;}	
+    #contact .container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;         
+    }   
+    #contact form {width: 100%; padding-top: 2rem; padding-bottom: 2rem;}
+    #contact form ~ div {width:100%;padding-top: 2rem; padding-bottom: 2rem;}
+    #contact .container:last-child div,
+    #contact .container:last-child h3{ width:100%; line-height: 2.5rem;}    
 }
 
 @media (min-width:768px) {
-	#contact .container{
-		padding:1.5rem; 
-		flex-direction: row; 
-	}	
-	#contact form {width: 50%; padding: 2rem;}
-	#contact form ~ div {width:50%;padding: 2rem; }
-	#contact .container:last-child div,
-	#contact .container:last-child h3{ width:50%; line-height: 2.5rem;}
+    #contact .container{
+        padding:1.5rem; 
+        -webkit-box-orient: horizontal; 
+        -webkit-box-direction: normal; 
+            -ms-flex-direction: row; 
+                flex-direction: row; 
+    }   
+    #contact form {width: 50%; padding: 2rem;}
+    #contact form ~ div {width:50%;padding: 2rem; }
+    #contact .container:last-child div,
+    #contact .container:last-child h3{ width:50%; line-height: 2.5rem;}
 }
 
 
@@ -202,11 +211,12 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s eas
 
 #contact h4 {color:#000; }
 .form-control { background-color: rgba(164,70,164,0.1); }
-#contact form button {background-color:rgba(164,70,164,1); border: solid 2px rgba(164,70,164,1);font-weight: bold; color: #fff; transition: all .5s ease-in-out;}
+#contact form button {background-color:rgba(164,70,164,1); border: solid 2px rgba(164,70,164,1);font-weight: bold; color: #fff; -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out;}
 #contact form button:hover {background-color: #fff; color:rgb(170,4,100);; }
 
-.form-control:focus {transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  box-shadow: -2px 2px 4px rgba(100,100,100,.5),2px 2px 4px rgba(100,100,100,.5),0px -2px 4px rgba(100,100,100,1);border-color: rgba(164,70,164,.5);}
+.form-control:focus {-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -webkit-box-shadow: -2px 2px 4px rgba(100,100,100,.5),2px 2px 4px rgba(100,100,100,.5),0px -2px 4px rgba(100,100,100,1);
+          box-shadow: -2px 2px 4px rgba(100,100,100,.5),2px 2px 4px rgba(100,100,100,.5),0px -2px 4px rgba(100,100,100,1);border-color: rgba(164,70,164,.5);}
 
 #error {color: red; padding-bottom: 1rem; font-weight: 700;}
 
@@ -244,11 +254,13 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; transition:border 1s eas
     border: 1px solid rgb(170,4,100);
     text-decoration: none;
     
+    -webkit-transition: color .5s ease-in-out;
+    
     transition: color .5s ease-in-out;
 }
 
 #contact ul li a:hover, 
-#contact ul li a:active {background-color:rgb(170,4,100);color:#fff; transition: all .5s ease-in-out;}
+#contact ul li a:active {background-color:rgb(170,4,100);color:#fff; -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out;}
 
 /************************************ Ajustement sur la section footer ************************************/
 footer {background-color:#555;}
