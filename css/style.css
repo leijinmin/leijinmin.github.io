@@ -138,9 +138,11 @@ hr {width:100%;}
 #about .container div {padding: 10px;}
 
 /************************************ Ajustement sur la section Portfolio ************************************/
-#portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 3.5rem; padding-bottom:4rem; color:#fff;}
+#portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 3.5rem; padding-bottom:4rem; color:#555;}
+#portfolio h2{ color: #fff; }
+.fa {font-size: 16px; color: red;}
 a.thumbnail {border: 1px dashed #fff; border-radius: 0; -webkit-transition:border 1s ease-in-out; transition:border 1s ease-in-out; padding:.4rem;margin-bottom: 0; border-radius:.5rem;}
-.tab-content h4 a, .tab-content p a{color:#555;}
+#portfolio .leftmargin {margin-left: -24px;}
 .tab-content p {margin-bottom: 2rem;}
 @media (max-width:767px) {
     #portfolio .thumbnail{display: inline-block;}
