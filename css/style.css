@@ -18,10 +18,10 @@ h4 {line-height: 2rem;}
 #menu nav {height:auto; padding-top: 10px; padding-bottom:10px;background-color:#555;}
 
 /*menu: la couleur du bar de navigation*/
-.navbar-default {background-color:transparent; border-color: transparent; } 
+.navbar-default {background-color:transparent; border-color: transparent; }
 
 /*menu: la couleur du fond du drop-down */
-#menu ul li a{ height: auto; width: auto; padding-top:8px; padding-bottom: 8px;} 
+#menu ul li a{ height: auto; width: auto; padding-top:8px; padding-bottom: 8px;}
 #menu ul li {margin: .5rem; }
 
 
@@ -38,9 +38,9 @@ h4 {line-height: 2rem;}
  { color: #fff; }
 
 /*menu: l'option active*/
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:focus, 
-.navbar-default .navbar-nav>.active>a:hover 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover
 {background-color: rgb(170,4,100); border: 1px solid #fff; color:#fff; -webkit-transition:background .3s ease-in-out; transition:background .3s ease-in-out;}
 
 /*logo: le texte du logo à gauche*/
@@ -49,7 +49,7 @@ h4 {line-height: 2rem;}
 .navbar-default .navbar-brand:visited,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:active
- {color:#ff0080;font-weight: 900; text-shadow: 2px 2px 6px rgb(200,0,100),-2px 0px 6px rgb(200,0,100),0px -2px 6px rgb(200,0,100);font-weight: bold; font-size: 1.5rem;} 
+ {color:#ff0080;font-weight: 900; text-shadow: 2px 2px 6px rgb(200,0,100),-2px 0px 6px rgb(200,0,100),0px -2px 6px rgb(200,0,100);font-weight: bold; font-size: 1.5rem;}
 
 
 .inject-me { width: 50px; height: auto; fill:#ff0080; }
@@ -64,11 +64,20 @@ h4 {line-height: 2rem;}
 /*.navbar-toggle {border-radius: 0;} */
 
 /* bouton: la courleur des trois lignes au dessus*/
-.navbar-default .navbar-toggle .icon-bar  {background-color:#fff;} 
+.navbar-default .navbar-toggle .icon-bar  {background-color:#fff;}
 
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.dropdown-menu>li>a {color:#fff;}
+.dropdown-menu>li>a:hover {background-color: #fff; color:#555;}
+.dropdown-menu {background-color: #555; border:0;}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {background-color: #555; color:#fff;}
 
 /************************************ Ajustement sur la section Quote ************************************/
-#quote {/*background-color: #fff;*/ margin-top: 4.5rem; 
+#quote {/*background-color: #fff;*/ margin-top: 4.5rem;
 }
 #quote i {font-size: .8rem; color: rgb(255,128,128); }
 #quote .btn-info {background-color: transparent;border: none;}
@@ -78,7 +87,7 @@ h4 {line-height: 2rem;}
 }
 #quote .quote-badge{
     background-color:#222;
-    color: rgb(255,128,128);   
+    color: rgb(255,128,128);
 
 }
 #quote .quote-box{
@@ -88,20 +97,20 @@ h4 {line-height: 2rem;}
     border-radius: 17px;
     background-color: rgb(164,70,164);
     margin-top: 25px;
-    color:white;  
-    -webkit-box-shadow: 2px 2px 2px 2px #E0E0E0;  
+    color:white;
+    -webkit-box-shadow: 2px 2px 2px 2px #E0E0E0;
             box-shadow: 2px 2px 2px 2px #E0E0E0;
 }
 #quote hr {background-color: #fff; border: 0 none; color: #fff; height: 1px;}
-#quote .quotation-mark{    
+#quote .quotation-mark{
     margin-top: -10px;
     font-weight: bold;
     font-size:100px;
     color:white;
-    font-family: "Times New Roman", Georgia, Serif;   
+    font-family: "Times New Roman", Georgia, Serif;
 }
 
-#quote .quote-text{    
+#quote .quote-text{
     font-size: 1.2rem;
     margin-top: -65px;
 }
@@ -117,14 +126,14 @@ hr {width:45px;  border-width: 2px; text-align: left;}
 #about .container div h3 {font-weight: 300;}
 #about .container img {float:right; width:auto; height:auto;border-radius: 50%; border:10px solid #555;margin-top: .5rem;text-align: center; padding: .1rem; }
 @media (max-width: 448px)
-{ 
+{
     #about .container {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 2rem;}
     #about .container img{width: 70%;  }
 }
 @media (min-width: 449px) and (max-width:767px) {
     #about .container {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 2rem;}
     #about .container img{width: 50%;  }
-    #about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}  
+    #about .container div h3{line-height: 2rem; margin-top: 1.5rem; padding-top: 1rem;padding-bottom: 1rem; text-align: left;}
     #portfolio .thumbnail{display: inline-block;}
 }
 @media (min-width:768px) {
@@ -140,7 +149,8 @@ hr {width:100%;}
 /************************************ Ajustement sur la section Portfolio ************************************/
 #portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 3.5rem; padding-bottom:4rem; color:#555;}
 #portfolio h2{ color: #fff; }
-.fa {font-size: 16px; color: red;}
+.fa {font-size: 16px; color: rgb(255, 153, 0);}
+.fa-thumbs-up {color:rgb(255, 102, 255);}
 a.thumbnail {border: 1px dashed #fff; border-radius: 0; -webkit-transition:border 1s ease-in-out; transition:border 1s ease-in-out; padding:.4rem;margin-bottom: 0; border-radius:.5rem;}
 #portfolio .leftmargin {margin-left: -24px;}
 .tab-content p {margin-bottom: 2rem;}
@@ -161,12 +171,12 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; -webkit-transition:borde
 }
 .nav-tabs>li.active>a:link,
 .nav-tabs>li.active>a:visited,
-.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:active
 {background-color: #555; color:#fff; border:none;}
 .nav-tabs>li>a:link,
 .nav-tabs>li>a:visited {background-color: transparent; color:#fff; border:none;}
-.nav-tabs>li>a:hover, 
+.nav-tabs>li>a:hover,
 .nav-tabs>li>a:active
 {background-color: transparent; }
 .nav-tabs {border-bottom: 1px solid #555;}
@@ -183,22 +193,22 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; -webkit-transition:borde
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
             -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;         
-    }   
+                flex-direction: column-reverse;
+    }
     #contact form {width: 100%; padding-top: 2rem; padding-bottom: 2rem;}
     #contact form ~ div {width:100%;padding-top: 2rem; padding-bottom: 2rem;}
     #contact .container:last-child div,
-    #contact .container:last-child h3{ width:100%; line-height: 2.5rem;}    
+    #contact .container:last-child h3{ width:100%; line-height: 2.5rem;}
 }
 
 @media (min-width:768px) {
     #contact .container{
-        padding:1.5rem; 
-        -webkit-box-orient: horizontal; 
-        -webkit-box-direction: normal; 
-            -ms-flex-direction: row; 
-                flex-direction: row; 
-    }   
+        padding:1.5rem;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
     #contact form {width: 50%; padding: 2rem;}
     #contact form ~ div {width:50%;padding: 2rem; }
     #contact .container:last-child div,
@@ -223,7 +233,7 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; -webkit-transition:borde
 #error {color: red; padding-bottom: 1rem; font-weight: 700;}
 
 #contact .container:last-child h3,
-#contact .container:last-child div 
+#contact .container:last-child div
 {padding:0 2rem 1rem;}
 
 #contact h4 {margin-bottom: 1rem;}
@@ -239,29 +249,29 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; -webkit-transition:borde
 @media (max-width: 420px) {
     #contact .fa {
     font-size: 1.5rem;}
-    #contact ul li a:link, 
+    #contact ul li a:link,
 #contact ul li a:visited {    width: 2.5rem;
     height: 2.5rem;line-height: 2.5rem;}
 }
 @media (min-width: 421px) {
     #contact .fa {
     font-size: 2rem;}
-    #contact ul li a:link, 
+    #contact ul li a:link,
 #contact ul li a:visited {    width: 3.2rem;
     height: 3.2rem;line-height: 3.2rem;}
 }
-#contact ul li a:link, 
+#contact ul li a:link,
 #contact ul li a:visited {
     display: inline-block;
     border: 1px solid rgb(170,4,100);
     text-decoration: none;
-    
+
     -webkit-transition: color .5s ease-in-out;
-    
+
     transition: color .5s ease-in-out;
 }
 
-#contact ul li a:hover, 
+#contact ul li a:hover,
 #contact ul li a:active {background-color:rgb(170,4,100);color:#fff; -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out;}
 
 /************************************ Ajustement sur la section footer ************************************/
