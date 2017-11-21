@@ -35,10 +35,17 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#quote" class="text-uppercase">About</a></li>
+                <li class="dropdown" id="lang">
+                  <a href="#"  class="text-capitalize dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">en</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="text-capitalize  selected">en</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" class="text-capitalize">fr</a></li>
+                  </ul>                </li>
+                <li><a href="#quote" class="text-capitalize"><span id="menu_1">About</span></a></li>
                 <!-- <li><a href="#portfolio" class="text-uppercase">Desgin Patterns</a></li> -->
                 <li class="dropdown">
-                          <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">portfolio <span class="caret"></span></a>
+                          <a href="#" class="dropdown-toggle text-capitalize" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="menu_2">portfolio</span> <span class="caret"></span></a>
                           <ul class="dropdown-menu">
                             <li><a href="#portfolio" class="text-uppercase portfolioMenu">Desgin Patterns</a></li>
                             <li><a href="#portfolio" class="text-uppercase portfolioMenu">C#</a></li>
@@ -49,7 +56,7 @@
                             <li><a href="#portfolio" class="text-uppercase portfolioMenu">Best practices</a></li>
                           </ul>
                         </li>
-                <li><a href="#contact" class="text-uppercase">contact</a></li>
+                <li><a href="#contact" class="text-capitalize"><span id="menu_3">contact</span></a></li>
               </ul>
             </div>
           </div>
@@ -79,14 +86,14 @@
   <div class="container-fluid" id="about"><!-- About -->
     <div class="container">
       <div>
-        <h4>I make this site for showing my understanding over the design patterns and their applications in different languages that I having been using as well as the best practices in doing programs.</h4>
-        <h4>About me : Full-Stack Developer with practical experience in HTML, JAVASCRIPT/JQUERY/ANGULARJS, C#/ASP.NET/SQLSERVER, JAVA/JSP/SPRING, PHP/MYSQL, Wordpress,
+        <h4 id="about_me_1">I make this site for showing my understanding over the design patterns and their applications in different languages that I having been using as well as the best practices in doing programs.</h4>
+        <h4 id="about_me_2">About me : Full-Stack Developer with practical experience in HTML, JAVASCRIPT/JQUERY/ANGULARJS, C#/ASP.NET/SQLSERVER, JAVA/JSP/SPRING, PHP/MYSQL, Wordpress,
           Mobile developement(android studio/ xamarin), XML/XSLT, MYSQL/SQLSERVER, BASH SCRIPT, LINUX/WINDOWS platforms; devoted to Web-site development and controllable
           software development process; special interest in improving the quality of the code by applying the principles of design patterns.
         </h4>
         <hr>
-        <h3>Web Developer - C# Developer - JSP Developer - PHP Developer - Mobile Development</h3>
-        <h3>AngularJS project: <a href="https://thawing-hamlet-39555.herokuapp.com/" target="_blank">Paroles and Lyrics</a><br /><a href="https://thawing-hamlet-39555.herokuapp.com/" target="_blank">https://thawing-hamlet-39555.herokuapp.com/</a></h3>
+        <h3 id="about_me_3">Web Developer - C# Developer - JSP Developer - PHP Developer - Mobile Development</h3>
+        <h3 id="about_me_4">AngularJS project: <a href="https://thawing-hamlet-39555.herokuapp.com/" target="_blank">Paroles and Lyrics</a><br /><a href="https://thawing-hamlet-39555.herokuapp.com/" target="_blank">https://thawing-hamlet-39555.herokuapp.com/</a></h3>
       </div>
      <img src="images/visage.jpg" alt="visage">
     </div>
@@ -328,7 +335,6 @@
    SVGInjector(document.querySelectorAll('img.inject-me'));
    SVGInjector(document.querySelectorAll('img.inject-me_author'));
 </script>
-<script src="js/data.json"></script>
 <script src="js/frontpage.js"></script>
 </body>
 </html>

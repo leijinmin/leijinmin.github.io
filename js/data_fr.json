@@ -1,0 +1,17 @@
+{"quote":
+  [
+	{"content":"Ne sois pas un chat quand tu peux être un chaton..","author":"Ed Lester","count":0},
+	{"content":"Personnes ayant des objectifs réussissent parce qu'ils savent où ils vont.","author":"Earl Nightingale","count":0},
+	{"content":"La créativité est un prolongement naturel de notre enthousiasme. ","author":"Earl Nightingale","count":0}
+  ],
+	"menu":
+		{
+       "menu1": "qui est moi"
+  	 , "menu2": "portfolio"
+   	 , "menu3": "se connecter"
+   },
+    "about_me":
+ 	 [
+     "Je fais ce site pour montrer ma compréhension sur les desgin patterns et leurs applications dans différentes langues que j'ai utilisées ainsi que les meilleures pratiques à mes connaisssances dans la programmation."
+   ]
+}

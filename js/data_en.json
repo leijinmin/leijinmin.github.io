@@ -1,0 +1,19 @@
+{
+	"quote":
+	[
+		{"content":"Don’t be a cat when you can be a kitten.","author":"Ed Lester","count":0},
+		{"content":"People with goals succeed because they know where they're going.","author":"Earl Nightingale","count":0},
+		{"content":"Creativity is a natural extension of our enthusiasm. ","author":"Earl Nightingale","count":0}
+	],
+	"menu":
+		{
+				"menu1": "about"
+		 , "menu2": "portfolio"
+	 	 , "menu3": "contact"
+	 },
+	 "about_me":
+	 [
+		 "I make this site for showing my understanding over the design patterns and their applications in different languages that I having been using as well as the best practices in doing programs."
+	 ]
+
+}
