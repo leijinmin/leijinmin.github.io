@@ -76,7 +76,7 @@ h4 {line-height: 2rem;}
 .dropdown-menu {background-color: #555; border:0;}
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {background-color: #555; color:#fff;}
 
-#lang {border:1px solid #ccc; background-color: #444; border-radius: 10%;}
+#lang {border:1px solid #ccc; background-color: #444; }
 #lang a.selected  {background-color:#fff; color:#555;}
 
 /************************************ Ajustement sur la section Quote ************************************/
