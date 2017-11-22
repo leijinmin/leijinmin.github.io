@@ -11,7 +11,7 @@ body {font-family: 'Lato', sans-serif; font-weight: 400;color: #fff;}
    {width: 95%;}
 }
 h4 {line-height: 2rem;}
-
+.h3 {font-size: 24px; color:rgba(200, 100, 0,1);text-shadow: 1px 1px 1px #000;}
 
 /************************************ Ajustement sur le bar de navigation ************************************/
 
@@ -148,6 +148,11 @@ hr {width:45px;  border-width: 2px; text-align: left;}
 }
 hr {width:100%;}
 #about .container div {padding: 10px;}
+
+#about ul li > span { display:inline-block; line-height: 30px; background-color: rgba(255, 153, 0,1);
+  -webkit-box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1), -15px 0px 0px 0px rgba(255, 153, 0,1);
+  -moz-box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1), -15px 0px 0px 0px rgba(255, 153, 0,1);
+  box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1) ,-15px 0px 0px 0px rgba(255, 153, 0,1);}
 
 /************************************ Ajustement sur la section Portfolio ************************************/
 #portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 3.5rem; padding-bottom:4rem; color:#555;}
