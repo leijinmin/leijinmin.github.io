@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8" />
+        <title>Disc Locator - jQuery in Action, 3rd edition</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+        <h1>Disc Locator</h1>
+
+        <form id="form-filters" action="#">
+                <fieldset>
+                        <legend>Filters</legend>
+                        <div id="filters">
+                        </div>
+                        <div class="buttons-wrapper">
+                                <input type="button" id="filter-add" value="Add Filter" />
+                                <input type="submit" id="filter-apply" value="Apply Filters" />
+                        </div>
+                </fieldset>
+        </form>
+
+        <div class="buttons-wrapper" id="editFilms">
+                <input type="button" id="addFilm" value="Add Film" class="btn btn-info" data-toggle="modal" data-target="#myModal" /> &nbsp;
+                <input type="button" id="deleteFilm" value="Delete Film" class="btn btn-info" disabled/>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Add a film</h4>
+                                        </div>
+                                        <form action="#">
+                                        <div class="modal-body">
+                                                
+                                                        <div class="form-group row">
+                                                                <label for="title" class="col-2 col-form-label">Title</label>
+                                                                <div class="col-10">
+                                                                        <input class="form-control" type="text" id="title" placeholder="Movie title">
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                                <label for="year" class="col-2 col-form-label">Year</label>
+                                                                <div class="col-10">
+                                                                        <select class="form-control" id="year">
+                                                                        </select>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                                <label for="binder" class="col-2 col-form-label">Binder</label>
+                                                                <div class="col-10">
+                                                                        <input class="form-control" type="number" min="0" id="binder" value=0>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                                <label for="page" class="col-2 col-form-label">Page</label>
+                                                                <div class="col-10">
+                                                                        <input class="form-control" type="number" min="0" id="page" value=0>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                                <label for="slot" class="col-2 col-form-label">Slot</label>
+                                                                <div class="col-10">
+                                                                        <input class="form-control" type="number" min="0" id="slot" value=0>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                                <label for="viewed" class="col-2 col-form-label">Viewed</label>
+                                                                <div class="col-10">
+                                                                        <label class="radio-inline">
+                                                                                <input type="radio" name="viewed" value=true>Yes</label>
+                                                                        <label class="radio-inline">
+                                                                                <input type="radio" name="viewed" value=false checked>No</label>
+
+                                                                </div>
+                                                        </div>
+                                                        <div>
+                                                             <input type="text" value="" id="error" disabled hidden>   
+                                                        </div>
+                                          
+                                        </div>
+                                        
+                                        <div class="modal-footer">
+                                                        <button type="submit" class="btn btn-default" id="doAddFilm">Submit</button>
+                                                        <button type="reset" class="btn btn-default">Reset</button>
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                                                                                                                                               
+                                        </form>
+
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+
+        <div id="panel-results">
+                <table id="results">
+                        <tr>
+                                <th><span>Title</span>&nbsp;<span></span></th>
+                                <th><span>Year</span>&nbsp;<span></span></th>
+                                <th><span>Binder</span>&nbsp;<span></span></th>
+                                <th><span>Page</span>&nbsp;<span></span></th>
+                                <th><span>Slot</span>&nbsp;<span></span></th>
+                                <th><span>Viewed</span>&nbsp;<span></span></th>
+                        </tr>
+                </table>
+        </div>
+
+        <!-- hidden templates -->
+        <div class="templates">
+
+                <div class="template filter-chooser">
+                        <input type="button" class="filter-remover" value="X" />
+
+                        <select name="filter" class="filter-type">
+                                <option value="" data-template-type="" selected="selected">Choose a filter</option>
+                                <option value="title" data-template-type="template-title">DVD Title</option>
+                                <option value="binder" data-template-type="template-binder">Binder</option>
+                                <option value="year" data-template-type="template-year">Release Date</option>
+                                <option value="viewed" data-template-type="template-viewed">Viewed?</option>
+                        </select>
+                </div>
+
+                <div class="template template-title">
+                        <select name="title-condition">
+                                <option value="contains">contains</option>
+                                <option value="starts-with">starts with</option>
+                                <option value="ends-with">ends with</option>
+                                <option value="equal">is exactly</option>
+                        </select>
+                        <input type="text" name="title" />
+                </div>
+
+                <div class="template template-binder">
+                        <input type="text" name="binder-min" class="numeric" />
+                        <span>through</span>
+                        <input type="text" name="binder-max" class="numeric" />
+                </div>
+
+                <div class="template template-year">
+                        <input type="text" name="year-min" class="date" />
+                        <span>through</span>
+                        <input type="text" name="year-max" class="date" />
+                </div>
+
+                <div class="template template-viewed">
+                        <label>
+                                <input type="radio" name="viewed" value="true" checked="checked" /> Yes</label>
+                        <label>
+                                <input type="radio" name="viewed" value="false" /> No</label>
+                </div>
+
+        </div>
+
+        <script src="myJquery.js"></script>
+</body>
+
+</html>

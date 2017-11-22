@@ -1,0 +1,59 @@
+html
+{
+   background-image: url("../images/background.jpg");
+}
+
+body
+{
+   padding: 1em;
+   background-color: #FFFFFF;
+}
+
+.templates
+{
+   display: none;
+}
+
+.filter
+{
+   margin-bottom: 0.5em;
+}
+
+.template.qualifier
+{
+   display: inline-block;
+   /* IE 6-7 Hack */
+   *display: inline;
+   zoom: 1;
+}
+
+#results
+{
+   margin: 1em auto;
+   border-collapse: collapse;
+}
+
+#results th,
+#results td
+{
+   padding: 0.2em 0.5em;
+}
+
+#results tr:nth-child(odd)
+{
+   background-color: #71A9D6;
+}
+.buttons-wrapper {
+    margin-top:10px;
+}
+#results tr  {
+    cursor: pointer;
+}
+#results .rowSelected {
+    background-color:rgb(161, 243, 114) !important;
+}
+#results span:last-child {color:rgb(232, 243, 136); font-size: 11px; vertical-align: top;}
+
+.modal-body {padding:25px;}
+#error {color:red; width:500px; border:none; background-color: transparent;}
+
