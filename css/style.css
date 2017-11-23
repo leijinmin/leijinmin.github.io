@@ -162,6 +162,7 @@ hr {width:100%;}
   -moz-box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1), -15px 0px 0px 0px rgba(255, 153, 0,1);
   box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1) ,-15px 0px 0px 0px rgba(255, 153, 0,1);
 }
+
 #about {word-wrap: break-word;}
 /************************************ Ajustement sur la section Portfolio ************************************/
 #portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 3.5rem; padding-bottom:4rem; color:#555;}
@@ -203,7 +204,7 @@ a.thumbnail {border: 1px dashed #fff; border-radius: 0; -webkit-transition:borde
 .glyphicon-wrench {color:rgb(250,0,0);}
 
 /************************************ Ajustement sur la section Contact ************************************/
-/*#contact {background-color: #fff; }*/
+
 #contact .container{color:#000;display: -webkit-box;display: -ms-flexbox;display: flex;min-height: 10rem; }
 @media (max-width:767px) {
     #contact .container{
