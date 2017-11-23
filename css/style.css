@@ -135,7 +135,9 @@ hr {width:45px;  border-width: 2px; text-align: left;}
 #about .container img {float:right; width:auto; height:auto;border-radius: 50%; border:10px solid #555;margin-top: .5rem;text-align: center; padding: .1rem; }
 @media (max-width: 448px)
 {
-    #about .container {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 2rem;}
+    #about .container {
+      /*display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-box-align: center; -ms-flex-align: center;*/
+       align-items: center; padding-bottom: 2rem;}
     #about .container img{width: 70%;  }
 }
 @media (min-width: 449px) and (max-width:767px) {
@@ -154,11 +156,13 @@ hr {width:45px;  border-width: 2px; text-align: left;}
 hr {width:100%;}
 #about .container div {padding: 10px;}
 
+
 #about ul li > span { display:inline-block; line-height: 30px; background-color: rgba(255, 153, 0,1);
   -webkit-box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1), -15px 0px 0px 0px rgba(255, 153, 0,1);
   -moz-box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1), -15px 0px 0px 0px rgba(255, 153, 0,1);
-  box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1) ,-15px 0px 0px 0px rgba(255, 153, 0,1);}
-
+  box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1) ,-15px 0px 0px 0px rgba(255, 153, 0,1);
+}
+#about {word-wrap: break-word;}
 /************************************ Ajustement sur la section Portfolio ************************************/
 #portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 3.5rem; padding-bottom:4rem; color:#555;}
 #portfolio h2{ color: #fff; }
