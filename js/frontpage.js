@@ -35,13 +35,14 @@ $(document).ready(function(){
 	var changeLangMenu = function($self) {
 				$('#lang ul li a').removeClass('selected');
 				$self.addClass('selected');
-				$('#lang > a:first-child').text($self.text());
+				$('#lang > a:first-child').html($self.html());
+				// $('#lang > a:first-child').text($self.text());
 	};
 	// Click on the language menu
 	$('#lang ul li a').click(function(e) {
 		if(!$(this).hasClass( "selected") ) {
 			changeLangMenu($(this));
-			loadContent("js/data_"+ $(this).text() +".json");
+			loadContent("js/data_"+ $(this).text().trim() +".json");
 		}
 	});
 
