@@ -76,8 +76,13 @@ h4 {line-height: 2rem;}
 .dropdown-menu {background-color: #555; border:0;}
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {background-color: #555; color:#fff;}
 
-#lang {border:1px solid #ccc; background-color: #444; }
+#lang {background-color: rgba(255,128,128, .4); border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(255, 255, 255,.2);
+  -moz-box-shadow:0px 0px 2px 1px rgba(255, 255, 255,.2);
+  box-shadow:0px 0px 4px 1px rgba(200,0,100,.5);}
 #lang a.selected  {background-color:#fff; color:#555;}
+#lang img {width:auto; height:18px;}
+#lang > a {padding-left: 8px; padding-right:8px; }
 
 /************************************ Ajustement sur la section Quote ************************************/
 #quote {/*background-color: #fff;*/ margin-top: 4.5rem;
