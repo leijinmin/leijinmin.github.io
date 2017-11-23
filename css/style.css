@@ -156,7 +156,7 @@ hr {width:45px;  border-width: 2px; text-align: left;}
 hr {width:100%;}
 #about .container div {padding: 10px;}
 
-
+#about ul li {list-style: none;}
 #about ul li > span { display:inline-block; line-height: 30px; background-color: rgba(255, 153, 0,1);
   -webkit-box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1), -15px 0px 0px 0px rgba(255, 153, 0,1);
   -moz-box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1), -15px 0px 0px 0px rgba(255, 153, 0,1);
