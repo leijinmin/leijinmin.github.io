@@ -3,6 +3,7 @@
 
 html {font-size: 16px;}
 body {font-family: 'Lato', sans-serif; font-weight: 400;color: #fff;}
+
 /*.container-fluid,.container {padding-right: 0;padding-left: 0;}*/
 .navbar-fixed-top { margin: auto;}
 /*.container {padding-right: 0;padding-left: 0;}*/
@@ -163,7 +164,7 @@ hr {width:100%;}
   box-shadow: 10px 0px 0px 0px rgba(255, 153, 0,1) ,-15px 0px 0px 0px rgba(255, 153, 0,1);
 }
 
-#about {word-wrap: break-word;}
+#about  {word-wrap: break-word;}
 /************************************ Ajustement sur la section Portfolio ************************************/
 #portfolio {background-color:#555; min-height: 724px;color:#515f67;padding-top: 3.5rem; padding-bottom:4rem; color:#555;}
 #portfolio h2{ color: #fff; }
