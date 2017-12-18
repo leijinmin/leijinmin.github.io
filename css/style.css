@@ -130,7 +130,7 @@ h4 {line-height: 2rem;}
 /************************************ Ajustement sur la section About ************************************/
 hr {width:45px;  border-width: 2px; text-align: left;}
 /*#about {background-color: #fff;}*/
-#about .container {min-height:450px; height:auto;padding-left: 1.5rem; padding-bottom: 2rem;}
+#about .container {min-height:350px; height:auto;padding-left: 1.5rem; padding-bottom: 2rem;}
 #about .container {color:#000;}
 #about .container div h3 {font-weight: 300;}
 #about .container img {float:right; width:auto; height:auto;border-radius: 50%; border:10px solid #555;margin-top: .5rem;text-align: center; padding: .1rem; }
